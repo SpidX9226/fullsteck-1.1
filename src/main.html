@@ -18,6 +18,16 @@
         <li> some </li>
         <li> thing </li>
     </ul>
-    <button> Button </button>
+    <button id="butt1"> Button </button>
+    <p id="qwe"> 0 </p>
+    <script>
+        let x = 0;
+        document.getElementById("butt1").addEventListener(
+            'click', () => {
+                x++;
+                document.getElementById("qwe").textContent(x);
+            }
+        )    
+    </script>
 </body>
 </html>
