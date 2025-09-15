@@ -1,33 +1,55 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-    <style> 
-        #heading123 {
-            text-align: center;
-        }    
-    </style>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">  
-    <title> plug </title>
+    <title> Main - My site </title>
+    <meta name="discription" content="Brief discription of the main page of the site.">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
 </head>
 <body>
-    <h1 id="heading123"> Plug </h1>
-    <p> A cool website will be here soon. </p>
-    <ul> 
-        <li> some </li>
-        <li> thing </li>
-    </ul>
-    <button id="butt1"> Button </button>
-    <p id="qwe"> 0 </p>
-    <script>
-        let x = 0;
-        document.getElementById("butt1").addEventListener(
-            'click', () => {
-                x++;
-                document.getElementById("qwe").textContent = x;
-            }
-        )
-    </script>
+    <!--Site header-->
+    <header>
+        <a href="/"> Logo or site name. </a>
+        <!--Main navigation menu-->
+        <nav>
+            <ul>
+                <li><a href="index.html"> Main </a></li>
+                <li><a href="about.html"> About </a></li>
+                <li><a href="contacts.html"> Contacts </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Unique main content of the page -->
+    <main>
+        <h1> Helcome to my site! </h1>
+        
+        <!--Section 1 with anchor-->
+        <section>
+            <h2> Our services </h2>
+            <p> Description of the services provided </p>
+            <a href="#contacts"> Contact us </a> <!--Anchor link inside page-->
+        </section>
+
+        <!--Section 2 with anchor-->
+        <section id="portfolio">
+            <h2> Portfolio </h2>
+            <p> Examples of our works... </p>
+        </section>
+
+        <!--Section 3 with anchor-->
+        <section id="contacts">
+            <h2> Our contact information </h2>
+            <p> Our contacts </p>
+            <a href="contacts.html"> More details </a> <!-- Link on other page -->
+        </section>
+    </main>
+
+    <footer>
+        <p> &copy; 2025 Name of the my site. All rights served. </p>
+        <p> Phone: +7 (901) 707-91-59 </p>
+    </footer>
 </body>
 </html>
