@@ -1,1 +1,1 @@
-https://spidx9226.github.io/fullsteck-1.1/src/main.html
+https://spidx9226.github.io/fullsteck-1.1/src/index.html
